@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Bataanx Revolution</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./assets/ph-war-flag-v2-png.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <main class="app" role="main">
+            <header>
+                <div class="logo"></div>
+
+                <div>
+                    <h1>Bataanx Engelnemen</h1>
+                    <p class="lead">A terminator that would suggest how to resolve the corruption in the Philippines. </p>
+                </div>
+            </header>
+
+            <section class="chat-wrap" aria-label="chat container">
+            <div id="messages" class="messages" role="log" aria-live="polite"></div>
+
+            <div class="input-row">
+                <div class="input" role="group" aria-label="message input">
+                    <input id="messageInput" type="text" placeholder="Write a message... (Press Enter to start the revolution!)" autocomplete="off" />
+                </div>
+                <button id="sendBtn" class="btn" aria-label="Send message">Send</button>
+            </div>
+            </section>
+
+            <audio id="backgroundMusic" autoplay loop>
+                <source src="./assets/И вновь продолжается бой.mp3" />
+            </audio>
+
+            <footer class="info">
+                <span></span>
+                <span id="status">Ready to start the revolution!</span>
+            </footer>
+        </main>
+
+        <script src="./webtec-ai-chatbot-submodule/app.js"></script>
+    </body>
+</html>
