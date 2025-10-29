@@ -24,7 +24,7 @@ async function onSend() {
   if (!text) return;
   addUserMessage(text);
   inputEl.value = "";
-  status.textContent = "Typing........";
+  status.textContent = "Brewing a revolution...";
   await simulateBotReply(text);
 }
 
