@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', setupAudio);
 
 // Introduce the terminator corruption fucker! AAAAAAGGGGGGGHHHHHHHHH!
 addBotMessage(
-  "Hi — I'm Bataanx Engelnemen. A terminator to resolve the corruption in the Philippines! Peaceful protests are ineffective as the people on top do not give a fuck!"
+  "Hi — I'm Bataanx Engelnemen. A terminator to resolve the corruption in the Philippines! Peaceful protests are ineffective as the people on the top always get away!"
 );
 
 // event handlers
