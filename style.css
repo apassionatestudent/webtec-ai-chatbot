@@ -115,7 +115,7 @@ p.lead {
 
 .msg.user {
     align-self: flex-end;
-    background: linear-gradient(180deg,#042f2f,#064e52);
+    background: linear-gradient(180deg,#5b1e09,#431305);
     border: 1px solid rgba(255,255,255,0.03)
 }
 
