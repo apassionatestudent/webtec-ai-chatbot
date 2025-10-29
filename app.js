@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', setupAudio);
 
 // Introduce the terminator corruption fucker! AAAAAAGGGGGGGHHHHHHHHH!
 addBotMessage(
-  "Hi — I'm Bataanx Engelnemen. A terminator to resolve the corruption in the Philippines! Peaceful protests are ineffective as the people on the top can always get away!"
+  "Hi — I'm Bataanx Engelnemen. A terminator to resolve the corruption in the Philippines! Peaceful protests are ineffective as the people on top do not give a fuck!"
 );
 
 // event handlers
@@ -24,20 +24,27 @@ async function onSend() {
   if (!text) return;
   addUserMessage(text);
   inputEl.value = "";
-  status.textContent = "Brewing a revolution........";
+  status.textContent = "Typing........";
   await simulateBotReply(text);
 }
 
 function addMessage(text, who = "bot") {
   const wrap = document.createElement("div");
   wrap.className = "msg " + (who === "bot" ? "bot" : "user");
-  wrap.innerHTML = `<div class="content">${text}</div><div class="meta">${new Date().toLocaleTimeString(
-    [],
-    {
-      hour: "2-digit",
-      minute: "2-digit",
-    }
-  )}</div>`;
+
+  const sender = who === "bot" ? "Bataanx Engelnemen" : "You";
+
+ wrap.innerHTML = `
+        <div class="sender">${sender}</div> <hr/>
+        <div class="content">${text}</div>
+        <div class="meta">${new Date().toLocaleTimeString(
+            [],
+            {
+                hour: "2-digit",
+                minute: "2-digit",
+            }
+        )}</div>
+    `;
   messagesEl.appendChild(wrap);
   messagesEl.scrollTop = messagesEl.scrollHeight;
 }

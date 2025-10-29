@@ -113,6 +113,12 @@ p.lead {
     border: 1px solid rgba(255,255,255,0.02)
 }
 
+.msg .sender {
+    font-weight: bold;
+    color: var(--muted);
+    margin-bottom: 4px;
+}
+
 .msg.user {
     align-self: flex-end;
     background: linear-gradient(180deg,#5b1e09,#431305);
